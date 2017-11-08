@@ -1,0 +1,31 @@
+****** TEST CASE N1
+Expression 1: (p,B,C,?x,?z,f(A,?z,B))
+Expression 2: (p,?y,?z,?y,C,?w)
+------- UNIFICATION -------- 
+ ?y/B ?z/C ?x/B  ?w/f(A,C,B)
+
+****** TEST CASE N2
+Expression 1: (P,?x,f(g(?x)),a)
+Expression 2: (P,b,?y,?z)
+------- UNIFICATION -------- 
+ ?x/b ?y/f(g(b)) ?z/a
+
+****** TEST CASE N3
+Expression 1: (q,f(A,?x),?x)
+Expression 2: (q,f(?z,f(?z,D)),?z)
+------- UNIFICATION -------- 
+FAIL
+
+****** TEST CASE N4
+Expression 1: (?x)
+Expression 2: (g(?x))
+------- UNIFICATION -------- 
+FAIL
+
+****** TEST CASE N5
+Expression 1: (?y)
+Expression 2: (?x)
+------- UNIFICATION -------- 
+?y/?x
+
+---- END TEST CASES ------
