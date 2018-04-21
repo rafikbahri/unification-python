@@ -11,6 +11,10 @@ Artificial Intelligence: Unification algorithm in Python
 `python unification.py`
 
 ## Details
+### test_cases.txt
+Contains the test cases. 
+Each line a test case.
+
 ### trace.txt 
 Contains the traces of the execution.
 
